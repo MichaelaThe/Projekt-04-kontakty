@@ -9,3 +9,95 @@ body {
 h1 {
 	text-align: center;
 }
+
+.tym {
+	display: flex;
+	flex-direction: row;
+}
+
+.osoba {
+	border: 1px rgb(196, 196, 196) solid;
+	border-radius: 10px;
+	box-shadow: 0.2px 0.2px 2px 0.2px #888888;
+	display: flex;
+	margin: 10px;
+	flex-direction: column;
+	flex-basis: 25%;
+	flex-grow: 1;
+}
+
+.foto img {
+	border-radius: 50%;
+}
+
+.foto {
+	display: flex;
+	justify-content: center;
+	padding-top: 30px;
+}
+
+.popis h2 {
+	text-align: center;
+}
+
+.popis p {
+	display: flex;
+	justify-content: center;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align: center;
+	padding-bottom: 0;
+}
+
+@media (max-width: 840px) {
+	.tym {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.jedna, .dva {
+		flex: 1 1 46%;
+	}
+
+	.tri, .ctyri {
+		flex: 1 1 46%;
+	}
+
+	.osoba{
+		flex-direction: row;
+	}
+
+	.foto {
+		justify-content: flex-start;
+		padding: 20px 0px 20px 20px;
+		display: block;
+	}
+
+
+	.popis {
+		flex-direction: column;
+		padding-top: 10px;
+	}
+
+	.popis p{
+		text-align: left;
+	}
+
+	.popis h2 {
+		text-align: left;
+		padding-left: 20px;
+	}
+}
+
+@media (max-width: 600px) {
+	.tym {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+
+	.popis h2 {
+		justify-content: flex-start;
+		padding-left: 20px;
+	}
+}
